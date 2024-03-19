@@ -2,6 +2,8 @@
 
 This repository contains the backend code for my Next.js application. Due to storage limitations, the frontend code is not included in this repository.
 
+filter.js의 finetuning 된 gpt 3.5 turbo 모델을 통해 양질의 결과를 얻을 수 있도록 설계했습니다.
+
 ## About the Application
 
 The application is a recommendation system built with Next.js. It uses an API endpoint to fetch recommendations based on user input.
@@ -28,4 +30,3 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 
 This project is licensed under the terms of the MIT license.
 
-filter.js의 finetuning 된 gpt 3.5 turbo 모델을 통해 양질의 결과를 얻을 수 있도록 설계했습니다.
