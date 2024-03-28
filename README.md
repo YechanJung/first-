@@ -1,32 +1,30 @@
-# My Next.js Application
+# My Next.js Recommendation Application
 
-This repository contains the backend code for my Next.js application. Due to storage limitations, the frontend code is not included in this repository.
+Welcome to the repository for my Next.js-based recommendation system. This project is a sophisticated blend of backend functionality and web automation, designed to deliver precise and actionable recommendations. Due to storage limitations, the frontend code is hosted separately.
 
-filter.js의 finetuning 된 gpt 3.5 turbo 모델을 통해 양질의 결과를 얻을 수 있도록 설계했습니다.
+## 🚀 About the Project
 
-## About the Application
+At the heart of this application is a cutting-edge blend of technologies including a fine-tuned GPT-3.5 Turbo model within `filter.js`, and Selenium for web interactions. Although we initially aimed to integrate the naver HyperClovaX LLM model for a more personalized experience, restrictions led us to creatively adapt. We now employ ChatGPT with LangChain, for processing and generating recommendations. Selenium plays a crucial role in automating web interactions to gather restaurant titles and URLs, ensuring users have direct access to navigation options.
 
-The application is a recommendation system built with Next.js. It uses an API endpoint to fetch recommendations based on user input.
+### How It Works
 
-## How it Works
+The recommendation engine, defined in `hyperclova.js`, follows a distinct process:
 
-The main function `getRecommend` in `hyperclova.js` is responsible for fetching the recommendations. It takes a message from the assistant as an argument and sends a POST request to the API endpoint at `http://127.0.0.1:5000/api`.
+1. User queries are received and enriched with location data via the Naver Geolocation API.
+2. A comprehensive `langPrompt` is generated, incorporating the user's request and location context.
+3. The backend crafts a POST request to our API at `http://127.0.0.1:5000/api`, which is served by a fine-tuned ChatGPT model.
+4. To compensate for the HyperClovaX model's unavailability, Selenium is used to scrape web data, ensuring rich and relevant recommendations.
+5. The API's response includes curated recommendations, each with a restaurant title and URL for seamless user navigation.
 
-The function constructs a `langPrompt` by concatenating a predefined location string with the assistant message. This `langPrompt` is then sent as JSON in the body of the POST request.
+## 🔧 Setup and Usage
 
-The API responds with a JSON object, which includes the assistant's response. This response is then returned by the `getRecommend` function.
+To leverage this system:
 
-## Setup and Usage
+- **Frontend Setup**: Ensure the frontend code is prepared in a separate repository or directory, as this backend is designed to integrate seamlessly with a frontend interface.
+- **Selenium Configuration**: This project uses Selenium for web scraping. Make sure you have the Selenium WebDriver installed and configured to match your browser setup.
+- **API Configuration**: The default API endpoint is `http://127.0.0.1:5000/api`. Adjust the endpoint in `getRecommend` as necessary to fit your environment.
 
-To use this application, you need to have the frontend code in a separate repository or directory. The frontend should call the `getRecommend` function with the assistant's message to get the recommendation.
+## 🤝 Contributing
 
-Please note that the application is configured to work with an API running on `http://127.0.0.1:5000/api`. If your API is running on a different URL, you will need to update the `fetch` call in `getRecommend`.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue.
-
-## License
-
-This project is licensed under the terms of the MIT license.
+We welcome contributions of all forms, from feature enhancements to bug fixes, and even documentation improvements. Feel free to fork this repository, commit your changes, and submit a pull request. For discussions or to suggest changes, opening an issue is encouraged.
 
