@@ -27,4 +27,6 @@ To leverage this system:
 ## 🤝 Contributing
 
 We welcome contributions of all forms, from feature enhancements to bug fixes, and even documentation improvements. Feel free to fork this repository, commit your changes, and submit a pull request. For discussions or to suggest changes, opening an issue is encouraged.
+<img width="805" alt="스크린샷 2024-03-29 오후 10 40 56" src="https://github.com/YechanJung/first-/assets/127584126/60fe5f0a-f567-4cc0-bd9f-6ed87a6ccb00">
 
+<img width="699" alt="스크린샷 2024-03-29 오후 10 45 46" src="https://github.com/YechanJung/first-/assets/127584126/abdf9e69-9549-49d0-b365-b7dc4dba5525">
