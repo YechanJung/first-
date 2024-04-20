@@ -1,0 +1,18 @@
+{
+  "name": "finetue",
+  "version": "1.0.0",
+  "main": "finetune.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "openai": "^4.29.1"
+  },
+  "type": "module",
+  "description": ""
+
+}

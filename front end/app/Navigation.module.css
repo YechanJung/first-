@@ -1,0 +1,23 @@
+/* Navigation.module.css */
+.container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .link {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #0070f3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #0056b3;
+  }
