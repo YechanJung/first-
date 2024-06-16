@@ -1,7 +1,6 @@
 # My Next.js Recommendation Application
 
-Welcome to the repository for my Next.js-based recommendation system. This project is a sophisticated blend of backend functionality and web automation, designed to deliver precise and actionable recommendations. Due to storage limitations, the frontend code is hosted separately.
-
+Welcome to the repository for my Next.js-based recommendation system. This project is a sophisticated blend of backend functionality and web automation, designed to deliver precise and actionable recommendations. 
 ## 🚀 About the Project
 
 At the heart of this application is a cutting-edge blend of technologies including a fine-tuned GPT-3.5 Turbo model within `filter.js`, and Selenium for web interactions. Although we initially aimed to integrate the naver HyperClovaX LLM model for a more personalized experience, restrictions led us to creatively adapt. We now employ ChatGPT with LangChain, for processing and generating recommendations. Selenium plays a crucial role in automating web interactions to gather restaurant titles and URLs, ensuring users have direct access to navigation options.
@@ -24,9 +23,7 @@ To leverage this system:
 - **Selenium Configuration**: This project uses Selenium for web scraping. Make sure you have the Selenium WebDriver installed and configured to match your browser setup.
 - **API Configuration**: The default API endpoint is `http://127.0.0.1:5000/api`. Adjust the endpoint in `getRecommend` as necessary to fit your environment.
 
-## 🤝 Contributing
 
-We welcome contributions of all forms, from feature enhancements to bug fixes, and even documentation improvements. Feel free to fork this repository, commit your changes, and submit a pull request. For discussions or to suggest changes, opening an issue is encouraged.
 
 
 <img width="805" alt="스크린샷 2024-03-29 오후 10 40 56" src="https://github.com/YechanJung/first-/assets/127584126/60fe5f0a-f567-4cc0-bd9f-6ed87a6ccb00">
